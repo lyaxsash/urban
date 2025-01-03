@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<table border="10" cellspacing="10" cellpadding="20" bgcolor="violet"> <!--table - задаёт таблицу, бордер - границы, cellspacing - расстояние между ячейками, сellpadding - расстояние от текста до границы-->
+		<thead> <!-- заголовок, основное тело и заключительная часть	 --> 
+			<tr>  <!-- строка таблицы--> 
+				<th> Заголовок 1 </th> 
+				<th> Заголовок 2 </th>
+				<th> Заголовок 3 </th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td colspan="2">данные 1</td> <!-- table data - текст в таблице, colspan - объединение столбцов (слева направо)-->
+				<td rowspan="2">данные 2</td> <!-- rowspan - объединение рядов (сверху вниз) -->
+				<td></td> <!--пустая ячейка чтобы не оставлять пробелов-->
+			</tr>
+			<tr>
+				<td>данные 3</td>
+				<td>данные 4</td>
+				<td>данные 5</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td>итого 1</td>
+				<td>итого 2</td>
+				<td>итого 3</td>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+</html>

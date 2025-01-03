@@ -1,0 +1,125 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Agu+Display&display=swap'); */
+
+
+@font-face {
+  font-family: 'Agu Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/agudisplay/v1/iJWXBXKbbi6BeMC1_RX7qF_V5E7aciGRRWUwX4fdlqVK.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+} 
+
+body {
+	font-family: "Agu Display";
+	font-weight: 700;
+}
+
+/* ТЕМА */
+
+.parent {
+	width: 100%;
+	height: 500px;
+	border: 4px solid black;
+	background-color: #ffc;
+	display: flex; /* текст выстраивается в ряд и цвет дочернего элемента устреляется вниз */
+	 flex-direction: ;
+	 align-items: center; 	 /* перестали вытягиваться и всё заполнять, и отцентрировались по вертикали */
+	/* justify-content: flex-start; */  /* по дефолту (с левого края) */ 
+	/* justify-content: flex-end ; */ 	/* с правого */
+	/* flex-direction: row-reverse;  */ 	/* c правого и реверсирован порядок */
+	/* justify-content: space-between; */
+	/* justify-content: space-around; */
+	/* justify-content: space-evenly; равномерное расстояния между и вокруг элементов */
+	justify-content:  ; 	/* центр по горизонтали */
+	/* flex-wrap: wrap; */
+	gap: 10px; 	/* одинаковые промежутки между доч. элементами */
+	/* flex-basis: 50px;это свойство, которое устанавливает начальный основной размер флекс-элемента.*/
+	margin-bottom: 10px;
+		/* flex-flow: row wrap; два свойства flex-direction и flex-wrap используются так часто вместе, что было создано свойство flex-flow для их комбинирования. Это свойство принимает их значения, разделённые пробелом. */
+		/* Это может запутать, но align-content отвечает за расстояние между рядами, в то время как align-items отвечает за то, как элементы в целом будут выровнены в контейнере. Когда только один ряд, align-content ни на что не влияет. */
+}
+
+.child {
+	background-color: #fcc;
+	 flex-grow: ;	/* говорит дочерним элементам пропорционально растянуться и занять все доступное пространство внутри родителя */
+	order: 1; /* задаёт порядок, если дочерних элементов несколько */
+}
+
+.child_big {
+	flex-grow: 0;
+	height: 50px;
+	order: 2;
+}
+
+.parent1 {
+	display: flex;
+	width: 500px;
+	height: 500px;
+	border: 5px solid blue;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap ; 	/* переносит элементы на новую строку */
+	margin-bottom: 10px;
+}
+
+.child1 {
+	background-color: aqua;
+	flex-basis: 200px;
+	order: ;
+}
+
+.parent2 {
+	display: flex;
+	height: 100px;
+	background-color: #ffc;
+	border: 3px solid #fcc;
+	flex-direction:  ;
+
+	justify-content: center;
+	gap: 10px;
+	margin-bottom: 10px;
+}
+
+.child2 {
+background-color: aqua;
+	border: 2px solid pink;
+	flex-grow: 0;
+}
+
+.child2_big {
+	background-color: aqua;
+		border: 2px solid pink;
+		flex-grow: 2;
+	}
+
+	.child2_small {
+		background-color: aqua;
+			border: 2px solid pink;
+			flex-grow: 1;
+		}
+
+.parent3 {
+	width: 500px;
+	height: 500px;
+	border: 4px solid black;
+	background-color: #ffc;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 10px;
+}
+
+.child3 {
+	background-color: #fcc;
+	order: 2;
+	border: 3px solid blue;
+}
+
+.child_big {
+	background-color: #fcc;
+	order: 1;
+	align-self: baseline;
+}
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./Display.css">
+	<style>
+	.flex-container {
+		display: flex;
+		justify-content: space-between;
+		background-color: aqua;
+		padding: 10px;
+		margin-bottom: 20px;
+	}
+
+	.flex-container .item {
+		background-color: palevioletred;
+		padding: 10px;
+		border: 1px solid white;
+		border-radius: 5px;
+	}
+
+	.grid-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 10px;
+		background-color: khaki;
+		padding: 10px;
+	}
+
+	.grid-container .grid-item {
+		background-color: white;
+		padding: 10px;
+		align-self: center;
+		border: 1px solid brown;
+		border-radius: 5px;
+		text-align: center;
+	}
+	
+</style>
+</head>
+<body>
+	<!-- свойство display переопределяет поведение элемента с одного на другое (например делает блочный элемент строчным) -->
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. In molestiae consectetur, quasi commodi eius dolorum quas aperiam harum sint aliquam odio eveniet mollitia! Sed corrupti illo amet tempora minima ratione!
+	<span class="target">edited text</span>
+	Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi debitis, eum, beatae eveniet officiis iusto quis explicabo obcaecati quas laboriosam, repellat ullam distinctio harum unde reprehenderit eligendi enim quo asperiores?
+	<br>
+	<button>Кнопка 1</button>
+	<button>Кнопка 2</button>
+
+	<a href="#" style="display: inline-block;">asdf,nlsf</a> 
+	<a href="#">pussy</a> 
+	<a href="#"">aphchh</a>
+
+	<div class="popup" style="display: none;"> Этот элемент появится после нажатия на кнопку</div>
+	<button onclick="showPopup()">Показать Popup</button>
+
+	<script>
+		function showPopup() {
+			document.querySelector('.popup').style.display = 'block';
+		}
+	</script>
+
+<section class="flex-container">
+<div class="item">элемент 1</div>
+<div class="item">элемент 2</div>
+<div class="item">элемент 3</div>
+</section>
+
+<div class="grid-container">
+	<div class="grid-item">dsfg</div>
+	<div class="grid-item">asdf</div>
+	<div class="grid-item">123</div>
+</div>
+</body>
+</html>
+
+
+

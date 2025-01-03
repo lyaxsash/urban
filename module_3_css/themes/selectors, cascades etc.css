@@ -1,0 +1,30 @@
+div {
+	background-color: violet /* !important */; /* тэг + !important перебивает весь id */
+	height: 100px;
+}
+
+.test {
+	background-color: blue;
+}
+
+#test1 {
+	background-color: aqua;
+}
+
+.test2 {
+	/* начальное значение */
+	background-color: blue;
+}
+
+.test2 {
+	/* переодпределили на новое значение */
+	background-color: red;
+}
+
+.container {
+	background-color: aqua;
+}
+p {
+	display: inline;
+	background-color: brown;
+}

@@ -1,0 +1,78 @@
+li:nth-child(3n+1) {
+	background-color: aqua;	
+} 
+
+li:first-child {
+	background-color: red;
+}
+
+li:last-child {
+	background-color: blue;
+}
+
+/* hover, active and focus */
+
+button:hover {
+	background-color: blueviolet;
+	transition: 0.3s;
+}
+
+button:focus {
+	background-color: cyan;
+	transition: 0.3s;
+}
+
+button:active {
+	background-color: lawngreen;
+	transition: 0.3s;
+}
+
+/* применяется ко всем li, не относящимся к классу highlight */
+li:not(.highlight) {
+color: gray
+}
+
+/* :fist-of-type & :last-of-type */
+
+p:first-of-type {
+	font-weight: bold;
+}
+
+p:last-of-type {
+	font-style: italic;
+}
+
+/* Псевдоэлементы */
+/* ::before ::after ::first-letter и т.д. стилизация разных элементов текста*/
+
+/* в списках можно юзать, добавляя всякие иконки помимо стандартных точек */
+.heading::before {
+	content: "L";
+	color: gold;
+}
+
+.intro::first-letter {
+	font-size: 2em;
+	font-weight: 1000;
+	color: darkred;
+}
+
+.p::first-line {
+	font-weight: bold;
+	color: navy;
+}
+
+/* при выделении текста мышкой меняет цвет и фон */
+::selection {
+	background-color: yellow;
+	color: red;
+}
+
+/* стилизация текста внутри поля для ввода */
+::placeholder {
+	color: darkred;
+	font-style: italic;
+}
+
+
+

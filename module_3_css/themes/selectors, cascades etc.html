@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./selectors, cascades etc.css">
+</head>
+<body>
+	<div>sldfjs</div>
+	<div class="test">sdfmlsmdf</div>
+	<div id="test1">dasfsd fs</div>
+	<div class="test2">должно быть красным </div>
+
+	<!-- вес селектора в css - приоритет использования. tag = 0.0.1, class = 0.1.0, id = 1.0.0. Поэтому выше все разного цвета, но одного размера (т.к. размер задан в див для всех див) -->
+	 <!-- селекторы стакаются: 
+	 • tag+class=0.1.1
+	 • id+class=1.1.0 
+	 • id (1.0.0)> tag+class (0.1.1) -->
+<!-- tag + !IMPORTANT - перебивает любой вес -->
+
+<!-- каскадность в css - то, что написано позже переопределяет (важнее) то, что написано раньше  -->
+ <!-- импортант и каскадность стараемся не использовать -->
+	<div class="container">
+		<p>Lorem ipsum dolor sit</p>
+	</div>
+</body>
+</html>

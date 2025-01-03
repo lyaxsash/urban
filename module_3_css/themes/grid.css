@@ -1,0 +1,95 @@
+.parent { 
+	display: grid; 
+	gap: 10px;
+	grid-template-columns: 100px auto 50%;  	/* создаём три колонки */
+	grid-template-rows: 100px 300px 100px 100px; /* создаём три ряда */
+	margin-bottom: 10px;
+	border: 5px solid;
+}
+
+.child {
+background-color: red;
+}
+.child.child_wide {
+grid-column: span 2;  /* занимаем две колонки в родительском элементе */
+}
+.child.child_high {
+grid-row: span 2;  /* займёт две строки */
+}
+.child.child_big {
+grid-column: span 2; grid-row: span 2;
+}
+
+.child.footer {
+	grid-column: span 3;
+}
+
+/*  */
+
+.parent1 {
+	display: grid;
+	grid-template-columns: 200px repeat(3, 1fr) repeat(2, 2fr); 	/* fr -  делит оставшиеся части равномерно, не нужно вручную каждую высчитывать. fr - fraction, то есть доли */
+	grid-template-rows: 500px;
+	gap: 10px;
+	border: 5px solid;
+}
+
+.column {
+	background-color: beige;
+}
+
+/* grid areas */
+
+.grid-areas {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-template-rows: auto;
+	grid-template-areas: 
+	"header header"
+	"sidebar main"
+	"footer footer";
+	gap: 20px;
+	margin-bottom: 20px;
+	background-color: yellowgreen;
+	padding: 10px;
+	text-align: center;
+}
+
+.header1 {
+	grid-area: header;
+	background-color: antiquewhite;
+}
+.sidebar1 {
+	grid-area: sidebar; 
+	background-color: aqua;
+}
+.main1 {
+	grid-area: main;
+	background-color: blanchedalmond;
+}
+.footer1 {
+	grid-area: footer;
+	background-color: goldenrod
+}
+
+/* Адаптивная галерея */
+
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 	/* auto-fit в купе с minmax автоматически распределяет все элементы внутри контейнера (без минмакс может начать добавлять лишние строки/столбцы) */
+	gap: 10px;
+	margin-bottom: 20px;
+}
+
+.grid-center {
+	display: grid;
+	place-items: center; /* помещает в цетр */
+	height: 100vh;
+	background-color: antiquewhite;
+}
+
+.butt {
+	padding: 20px;
+	background-color: aqua;
+}
+

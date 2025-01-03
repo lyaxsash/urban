@@ -1,0 +1,68 @@
+/* общая стилизация */
+
+html {
+	font-family: Arial, sans-serif;
+	font-size: 1em;
+	background-color: #f8f9fa;
+}
+
+h1 {
+	font-size: 2.5rem;
+	background: linear-gradient(rgb(6, 230, 211),rgb(227, 19, 192));
+	 color: rgb(255, 255, 255);
+	 -webkit-text-stroke: 1px black; 
+	 padding-left: 5px;
+}
+
+h2 {
+	font-size: 2rem;
+	color: rgb(0, 255, 234);
+	-webkit-text-stroke: 1px black; 
+	padding-left: 5px;
+}
+
+/* навигация */
+
+  nav ul {
+		list-style-type: none;
+		display: flex;
+		justify-content: center;
+		gap: 15px;
+	}
+	
+	nav a {
+		color: blue;
+	}
+
+	nav a:hover {
+		color: lightpink;
+		transition: 0.3s;
+	}
+
+	/* интро */
+
+	.intro {
+		background-color: #007bff;
+		color: white;	
+	}
+
+	.intro_contents {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 10px 10px 10px 10px;
+	}
+
+	/* контент */
+
+	.content {
+		background-color: white;
+		box-shadow: 7px 7px rgb(190, 188, 188);
+	}
+
+	.content_contents {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 10px 10px 10px 10px;
+	}

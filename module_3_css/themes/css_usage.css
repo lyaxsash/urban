@@ -1,0 +1,8 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css); /* удаляет стоковые стили браузера и ставит свои (квадрат не делает отступ от окна браузера) */
+.test1 {
+	background-color: palegreen;
+	width: 500px;
+	height: 500px;
+}
+
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<form action="" method="get"> <!-- form - не само поле, а секция для полей; action - куда отсылает данные, method: get - запрашивает данные, post - отправляет данные на сервер-->
+		<label for="firstline">Название поля</label>
+		<input type="text" name="user_name" placeholder="Введите имя" id="firstline"> <!-- input - само поле. placeholder - целевой текст внутри поля; name - то, что будет идти после http//:сайт.com/. Например http//:piska.ru/user_name=Bob; заёб с id ради того, чтобы нажав на "название поля" - label - у меня активировался курсор на поле -->
+		<br>
+		<label>Фамилия
+			<input type="text" name="surname" placeholder="Фамилия"> <!-- второй вариант и более изичный, без id и дополнительной привязки: здесь уже сразу label привязан к input -->
+		</label>
+			 <br>
+		<label>
+			Возраст
+			<input type="number" name="age" placeholder="Возраст" step="10"> <!-- можно вести только десятки-->
+			<br>
+			<input type="submit"> <!-- два инпута не активизируются клавишей enter и нужна кнопка -->
+			<button>Отправить</button> <!-- также можно просто хуйнуть  --> 
+	<hr>
+	<label for="">пароль
+	<input type="password"><!-- чёрные точки --> </label> <input type="time"> <input type="color"> <input type="file">
+	<br>
+	<label>Вариант 1 
+	  <input type="checkbox" name="var1"> <!-- checkbox - поставьте галочку где нужно -->
+	<label>Вариант 2
+		<input type="checkbox" name="var2">	
+	<label>Вариант 3 
+			<input type="checkbox" name="var3">
+	<br>
+	<!-- дальше radio - хуйня, которая позволяет выбрать один из вариантов. Это возможно, если приписать всем инпутам одно и то же имя. С чекбоксом это не работает. Чтобы браузер понял, какой из вариантов отправляется, в атрибуте value уже указываем имя -->
+	<label>
+		Вариант 1
+	  <input type="radio" name="answer" value="var1">
+</label>
+<label>
+	Вариант 2
+		<input type="radio" name="answer" value="var2">
+</label>
+<label>
+	Вариант 3
+		<input type="radio" name="answer" value="var3">
+</label>
+	<br>
+	<input type="text" placeholder="Напишите город" name="cities" list="all_cities"> 	<!-- id и list здесь выполняют хуйню, благодаря которой в полне будут появляться варианты из option -->
+  <datalist id="all_cities">
+		<option value="Казань">Казань</option>
+		<option value="Москва">Москва</option>
+	</datalist>
+	<br>
+	<select name="fruits" id=""> <!-- выбор из заданного списка -->
+		<option value="">Яблоко</option>
+		<option value="">Мандарин</option>
+		<option value="">Банан</option>
+		<option value="">Груша</option>
+	</select>
+	<br>
+	<textarea name="comment" id="" placeholder="Введите ваш комментарий" cols="50" rows="10"></textarea>
+	<input type="submit">
+</form>
+</body>
+</html>

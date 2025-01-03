@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>встраивание видосов, ссылок, картинок с других ресурсов</title>
+  </head>
+  <body>
+    <iframe
+      src="https://en.wikipedia.org/wiki/Wiki"
+      width="400"
+      height="400"
+      frameborder="0"
+    ></iframe>
+
+    <iframe srcdoc="<ul><li>1</li><li>1</li><li>1</li></ul>"></iframe>
+    <!-- встраивает вёрстку в сайт -->
+    <iframe
+      src="https://yandex.ru/map-widget/v1/-/CDx-yC72"
+      frameborder="0"
+    ></iframe>
+    <iframe src="images/коллаб.mp4" frameborder="0"></iframe>
+
+    <!-- youtube -->
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/75SkSq9kxRU?si=fNIJyeg9LcdIDBgi"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+      sandbox
+    ></iframe>
+    <!-- в  случае, если виджет может отправлять ненужные данные пользователю, этим атрибутом его можно заблочить -->
+
+    <iframe
+      src="https://www.youtube.com/embed/75SkSq9kxRU?si=fNIJyeg9LcdIDBgi"
+      frameborder="0"
+      width="400"
+      heigh="400"
+    ></iframe>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </body>
+</html>
